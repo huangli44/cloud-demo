@@ -10,13 +10,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-api-commens" />
         <module name="cloud-consumer-order80" />
+        <module name="cloud-enreka-server7001" />
+        <module name="cloud-eureka-server7002" />
         <module name="cloud-provider-payment8001" />
+        <module name="cloud-provider-payment8002" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="cloud-api-commens" target="1.8" />
       <module name="cloud-consumer-order80" target="1.8" />
+      <module name="cloud-enreka-server7001" target="1.8" />
+      <module name="cloud-eureka-server7002" target="1.8" />
       <module name="cloud-provider-payment8001" target="1.8" />
+      <module name="cloud-provider-payment8002" target="1.8" />
       <module name="mscloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>

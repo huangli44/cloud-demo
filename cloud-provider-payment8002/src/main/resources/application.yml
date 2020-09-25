@@ -1,0 +1,24 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://120.27.240.171:3306/dbcloud2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+eureka:
+  client:
+    register-with-enreka: true
+    fetchRegister: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+#      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities
