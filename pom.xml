@@ -15,6 +15,10 @@
         <module>cloud-eureka-server7002</module>
         <module>cloud-provider-payment8002</module>
         <module>cloud-provider-payment8004</module>
+        <module>cloud-consumerzk-order80</module>
+        <module>cloud-provider-consul-payment8005</module>
+        <module>cloud-consumer-consul-order80</module>
+        <module>cloud.consumer-ribbonrandom-order80</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -99,6 +103,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
                 <configuration>
                     <!--fork:如果没有该项配置,整个devtools不会起作用-->
                     <fork>true</fork>

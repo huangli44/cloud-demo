@@ -17,6 +17,9 @@ eureka:
     fetchRegister: true
     service-url:
       defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: payment8002 #修改注入到euraka中实例的名称
+    prefer-ip-address: true #显示IP
 #      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
 
 mybatis:
